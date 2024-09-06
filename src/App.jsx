@@ -9,6 +9,8 @@ import Login from './pages/Login';
 import HeroSection from './pages/HeroSection';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Error404 from './pages/Error404';
+import Account from './pages/Account';
 
 
 
@@ -31,6 +33,12 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/herosection" element={<HeroSection />} />
+        <Route path="*" element={<Error404></Error404>} /> 
+        <Route path="/myAccount" element={<Account></Account>} /> 
+
+
+
+
 
         
       </Routes>
